@@ -7,6 +7,8 @@ import { userRouter } from './routes/userRouter.js';
 dotenv.config();
 const { USER, PASSWORD, DATABASE, PORT } = process.env;
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
+
 const db = knex({
   client: 'pg',
   connection: {
