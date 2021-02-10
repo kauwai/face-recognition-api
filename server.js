@@ -10,7 +10,7 @@ const { USER, PASSWORD, DATABASE, PORT } = process.env;
 const db = knex({
   client: 'pg',
   connection: {
-    host: '127.0.0.1',
+    host: 'postgresql-trapezoidal-71980',
     user: USER,
     password: PASSWORD,
     database: DATABASE,
